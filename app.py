@@ -1,4 +1,4 @@
-# Run this app with `python app.py`
+e# Run this app with `python app.py`
 
 from dash import Dash, html, dcc
 import plotly.express as px
@@ -8,7 +8,7 @@ from plotly.subplots import make_subplots
 
 app = Dash(__name__)
 
-# Add server start
+server = app.server
 
 tips = pd.read_csv('RestaurantTips.csv')
 
