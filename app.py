@@ -13,7 +13,7 @@ server = app.server
 tips = pd.read_csv('RestaurantTips.csv')
 
 def make_correlation_heatmap():
-    tips_cor = tips.corr(numerical_only=True)
+    tips_cor = tips.corr(numerical_only=False)
 
     fig = px.imshow(
     tips_cor, 
